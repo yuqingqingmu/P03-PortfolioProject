@@ -45,6 +45,17 @@ section p {
   background-color: #fcf1f1;
   border-radius: 1rem;
 }
+.image-code{
+  background-color: #fcf1f1;
+  border-radius: 1rem;
+  height: 8em;
+}
+.image-code-box{
+  justify-content: space-around;
+}
+.image-code{
+  align-self: center;
+}
 .container{
   padding: 1em;
   border-radius: 0.5em;
@@ -140,6 +151,38 @@ input[type=text] {
 
 input[type=text]:focus{
   width: 40%;
+}
+
+/*image*/
+.pic-container {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1; 
+  width: 92%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pic-container:hover .overlay {
+  opacity: 1;
 }
 /* Styling for the navigation button */
 .button-nav {
