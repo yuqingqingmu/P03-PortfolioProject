@@ -7,12 +7,13 @@
     <title>Style Guide Template</title>
 
     <link href="css/main.css" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
   </head>
 
   <body>
 
-    <h1>Style Guide Template</h1>
+    <h1 class="title">Style Guide Template</h1>
 
     <p>A template you can use to start building out your own style guides with.</p>
 
@@ -34,7 +35,7 @@
     <section id="interactive_elements">
 
       <!-- Default Button styling section -->
-      <section>
+<!--       <section>
 
         <h2>Navigation Button</h2>
 
@@ -47,29 +48,82 @@
         <h3>Rendered element:</h3>
         <a class="button" href="#">Default Button</a>
 
+      </section> -->
+
+
+      <div class="container">
+      <section>
+        <div class="flex-container">
+         <h2>In-text link</h2>
+         <div>
+         <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit, <a href="#" class="in-text-link">sed do eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. 
+         </p>
+        </div>
+        <div class="code-box">
+          <code>
+          HTML:<br>
+          &lt;p&gt;
+            Lorem ipsum dolor sit amet, &lt;a href="#" class="in-text_link"&gt;consectetur adipisicing elit&lt;/a&gt;, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. 
+          &lt;/p&gt;
+        </code>
+       </div>
+       </div>
       </section>
 
       <section>
-        <h2>In-text link</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit , <a href="#" class="in-text_link">sed do eiusmod tempor</a> incididunt ut labore et dolore magna aliqua.
-          </p>
-      </section>
-
-      <section>
+        <div class="flex-container">
         <h2>Submit/Reset Buttons</h2>
-        <div class="pos"><a href="#" class="btn">Submit</a></div>
-        <div class="pos"><a href="#" class="btn">Reset</a></div>
-      </section>
-
-      <section>
-        <h2>Text Input Field</h2>
-        <div class="container-item example">
-          <label for="name">Name</label>    
-          <input type="text" id="name" placeholder="Allison" required>
+        <div class="btns">
+          <div class="pos"><a href="#" class="btn btn-1">Submit</a></div>
+          <div class="pos"><a href="#" class="btn btn-2">Reset</a></div>
+        </div>
+        <div class="code-box">        
+          <code>
+          HTML:<br>
+          &lt;div class="btns"&gt;<br>
+          &lt;div class="pos&gt;&lt;a href="#" class="btn"&gt;Submit&lt;/a&gt;&lt;/div&gt;<br>
+          &lt;div class="pos&gt;&lt;a href="#" class="btn"&gt;Reset&lt;/a&gt;&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code></div>
         </div>
       </section>
 
+      <section>
+        <div class="flex-container">
+        <h2>Text Input Field</h2>
+        <div>
+          <label for="fname">First Name: </label>
+          <input type="text" id="fname" name="fname" placeholder="Allison"><br>
+          <label for="lname">Last Name: </label>
+          <input type="text" id="lname" name="lname" placeholder="Mu">
+        </div>
+        <div class="code-box">        
+          <code>
+          HTML:<br>
+          &lt;label for="fname"&gt;First Name: &lt;/label&gt;
+          &lt;input type="text" id="fname" name="fname" placeholder="Allison"&gt;&gt;br&gt;
+          &lt;label for="lname"&gt;Last Name: &lt;/label&gt;
+          &lt;input type="text" id="lname" name="lname" placeholder="Mu"&gt;
+          </code></div>
+        </div>
+        </div>
+      </section>
+
+
+      <section>
+      <h2>Image as a link</h2>
+      <div class="pic-container">
+        <img src="img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">My Name is John</div>
+      </div>  
+    </section>
+
+    </div>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -77,7 +131,7 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-
+      <div class="container">
       <section>
         <h2>Headings</h2>
 
@@ -99,7 +153,7 @@
           <li>List item</li>
           <li>List item</li>
           <li>List item</li>
-        <ul>
+        </ul>
       </section>
 
       <section>
@@ -110,7 +164,7 @@
           <li>List item</li>
         </ol>
       </section>
-
+    </div>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -124,26 +178,14 @@
           <div class="nav-container">
             <nav>
                 <ul class="main-nav" id="js-menu">
-                    <li>
-                        <a href="styleguide.html" class="nav-links">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-links">Project</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-links">About</a>
-                    </li>
+                    <li><a href="styleguide.html" class="active">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">StyleGuide</a></li>
                 </ul>
             </nav>
         </div>
 
-    <section>
-      <h2>Image as a link</h2>
-      <div class="container">
-        <img src="img_avatar.png" alt="Avatar" class="image">
-        <div class="overlay">My Name is John</div>
-      </div>  
-    </section>
+
 
 
     </section>
