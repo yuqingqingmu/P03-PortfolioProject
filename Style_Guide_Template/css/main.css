@@ -40,6 +40,12 @@ section p {
 .title{
   color: white;
   text-align: center;
+  font-size: 2.8em;
+}
+.sub-title{
+  color: #f9813a;
+  text-align: center;
+  font-size: 1.8em;
 }
 .code-box{
   background-color: #fcf1f1;
@@ -59,7 +65,7 @@ section p {
 .container{
   padding: 1em;
   border-radius: 0.5em;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -72,18 +78,17 @@ section p {
 .flex-container{
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
-
+  /*border: 1px solid black;*/
 }
 .flex-container>div{
   width: 45%;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin-right: 1.5em;
   padding: 1rem;
 }
 .flex-container>h2{
   width: 100vw;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 /* 
@@ -218,9 +223,10 @@ input[type=text]:focus{
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  margin-bottom: 1rem;
 }
 .main-nav>li{
-  float: right;
+  float: left;
 }
 li a {
   display: block;
@@ -235,5 +241,50 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #ffd5cd;
+  color:#f9813a;
+}
+
+.color{
+  text-align: center;
+}
+.black{
+  background-color: #1a1c20;
+  color: white;
+}
+.pink{
+  background-color:#ffd5cd;
+  color: black;
+}
+.orange{
+  background-color:#f9813a;
+  color: white;
+}
+
+.white{
+  background-color:#fcf1f1;
+  color: black;
+}
+
+/*responsive*/
+@media only screen and (max-width: 900px) {
+ .container{
+    flex-direction: column;
+ }
+h2,p{
+    text-align: center;
+ }
+.flex-container>div{
+  width:100%;
+  margin-bottom: 3rem;
+}
+.flex-container>div>p,h1,h2,h3,h4,ul,ol{
+  text-align: center;
+}
+input[type=text] {
+  width: 60%;
+}
+input[type=text]:focus{
+  width: 70%;
+}
 }
