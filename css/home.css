@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+.intro{
+	font-size: 7em;
+	color: white;
+}
+h2{
+	color: white;
+}
+.flex-intro{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-intro>div{
+	width: 50%;
+	margin: 0;
+}
+.flex-intro>div:nth-child(2){
+	border: 2px solid red;
+	text-align: right;
+	margin: 0,0;
+}
+
+.flex-intro>div:nth-child(1){
+	/*height: 17vw;*/
+	padding: none;
+}
+
+body{
+	padding: 0;
+}
+.text-container{
+	width: 40%;
+	color: #f9813a;
+	float: right;
+	position: absolute;
+	right: 5%;
+	background-color: white;
+	border-radius: 2em;
+	padding: 0.9em;
+}
