@@ -10,3 +10,12 @@
 	width: 10em;
 	height: 12em;
 }
+
+@media only screen and (max-width: 900px) {
+ .process-image{
+	width:22em;
+	height: 14em;
+}
+p{
+	text-align: left;
+ }}
