@@ -217,7 +217,7 @@ input[type=text]:focus{
 /* 
   COMBINED ELEMENTS -------------------
 */
-.main-nav{
+/*.main-nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -227,8 +227,8 @@ input[type=text]:focus{
 }
 .main-nav>li{
   float: left;
-}
-li a {
+}*/
+/*li a {
   display: block;
   color: white;
   text-align: center;
@@ -239,11 +239,11 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
-
-.active {
+*/
+/*.active {
   background-color: #ffd5cd;
   color:#f9813a;
-}
+}*/
 
 .color{
   text-align: center;
@@ -287,4 +287,17 @@ input[type=text] {
 input[type=text]:focus{
   width: 70%;
 }
+}
+
+.box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.b {
+  margin: 40vh auto 0 auto;
 }
