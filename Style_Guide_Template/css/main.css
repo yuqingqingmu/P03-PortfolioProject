@@ -74,6 +74,9 @@ section p {
   color: rgb(26,28,32);
 }
 
+.txt{
+  font-size: 30px;
+}
 /*Flex box*/
 .flex-container{
   display: flex;
