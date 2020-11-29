@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link href="css/home.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+    <link href="css/footer.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
@@ -75,27 +76,79 @@
 
 <section class="section2" >
   <div id="section2" class="flex-about">
-    
-    <div> 
+    <div>
+    <div class="titleFont">
     <span class="txt">
       <span>ABOUT</span><br/>
       <span>ME</span>
-      <span class="dot">.</span></span>
+    <span class="dot">.</span></span></div> 
       <p>Highly creative and motivated interactive arts and technology program student with graphic & web design experience critical thinking and problem solving skills. As a curious learner, I am good at communicating with colleagues and learning new things. For me, the most interesting part of graphic design is that I could express my personality by my works and communicate with the audiences.</p></div>
 
-    <div><h2>My Skill</h2>
-        <ul>Adobe Software
+    <div class="flex-skills" data-aos="flip-up" data-aos-duration="1000">
+      <h2>My Skill</h2>
+          <div><ul><h3>Adobe Software</h3>
           <li>Illustrator</li>
-          <li>Primier</li>
+          <li>premiere</li>
           <li>PhotoShop</li>
-          <li>Indesign</li>
-        </ul>
+          <li>InDesign</li>
+          </ul></div>
+
+
+        <div><ul><h3>Web Development</h3>
+          <li>Website</li>
+          <li>Interaction design</li>
+          <li>Responsive design</li>
+        </ul></div>
+
+
+        <div><ul><h3>Code</h3>
+          <li>HTML</li>
+          <li>Pathon</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul></div>
+
+        <div><ul><h3>Design</h3>
+          <li>Web design</li>
+          <li>Art direction</li>
+          <li>Logo & branding</li>
+          <li>UI & UX</li>
+        </ul></div>
+    </div>
+  </div>
+
+
+    <h2 class="myWork">My Works</h2>
+   <div class="flex-image">
+    <div>
+    <div class="display"><h3>Poster Design - IAT 103</h3><img src="images/posterDisplay.jpg" alt="Posters" class="posterImages">
+    </div>
+    <div><a href="project2.html" class="btn btn-1">Detail</a></div>
     </div>
 
+    <div>
+    <div class="display"><h3>Website Design - IAT 339</h3><img src="images/webDisplay.jpg" alt="website"class="webImage"></div><div><a href="project2.html" class="btn btn-1">Detail</a></div>
+    </div>
+  </div>
+
+  <div class="flex-contact">
+    <h1>Contact Me</h1>
+    <div><p>Email: yma45@sfu.ca</p></div>
+    <div><p>Phone: 778-927-4846</p></div>
+    <div>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-instagram"></a></div>
   </div>
 </section>
-   <script>
+<footer class="footer">
+    <div><a href="#"><h3>GitHub</h3></a></div>
+    <div><a href="#"><h3>StyleGuide</h3></a></div>
+    <div><a href="#"><h3>Reference</h3></a></div>
+</footer>
+<script>
   AOS.init();
 </script>
   </body>
+
 </html>
