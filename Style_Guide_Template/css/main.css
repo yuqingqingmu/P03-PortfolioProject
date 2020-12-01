@@ -304,3 +304,27 @@ input[type=text]:focus{
 .b {
   margin: 40vh auto 0 auto;
 }
+}
+
+@media(max-width:768px){
+  nav{
+    position:relative;
+    width:50px;
+  }
+  .fa-bars{
+    cursor:pointer;
+    text-align:center;
+    display:block;
+  }
+  .main-nav{
+    position:absolute;
+    display:none;
+    text-align:left;
+    width:200px;
+    background:black;
+  }
+  .main-nav.show{
+    display:block;
+  }
+
+}
