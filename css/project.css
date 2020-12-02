@@ -3,7 +3,7 @@
 }
 body {
   font-family: 'Arimo';
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1rem;
   background-color:#f9813a;
 }
@@ -14,6 +14,9 @@ h1{
 h1,h2,h3,h4{
   font-family: 'Playfair Display';
   
+}
+p{
+	font-size: 17px;
 }
 .pic-container{
 	width: 100%;
@@ -58,6 +61,14 @@ h1,h2,h3,h4{
 /*nav*/
 .topnav .icon {
   display: none;
+}
+
+.logo{
+	text-decoration: none;
+	color: white;
+	font-style: bold;
+	font-weight: 700;
+	display: none;
 }
 
 .main-nav {
@@ -140,15 +151,15 @@ li.active .link:after {
 	width: 100%;
 	flex-wrap: wrap;
 	margin:auto;
-	border: 3px solid black;
 	justify-content: center;
+	margin-top: 2em;
 
 }
 
 .flex-container>div:nth-of-type(1){
 	width: 70%;
-	border: 1px solid black;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 
 }
@@ -157,36 +168,73 @@ li.active .link:after {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border: 1px solid black;
 	width: 45%;
 }
 .flex-container>div:nth-of-type(1)>div:nth-of-type(2){
 	width: 45%;
-	border: 1px solid black;
 }
 
 .steps{
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-around;
+	border-bottom: 2px dotted black;
 }
 .steps>div:nth-of-type(1){
-	width: 30%;
+	width: 20%;
 }
-.steps>div:nth-of-type(1)>h3{
+.steps>div:nth-of-type(1)>h2{
 	font-weight: 1200;
 	color:#f9813a;
 }
 .steps>div:nth-of-type(2){
-	width: 35%;
+	width: 50%;
 }
 .process-image{
 	width: 100%;
-	border: 5px red black;
 }
 .researchImage{
 	width: 100%;
-	border: 1px red black;
+}
+
+.flex-container2{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+.flex-container2>div:nth-of-type(1){
+	width:70%;
+	display: flex;
+	justify-content: space-around;
+}
+.flex-container2>div:nth-of-type(1)>div{
+	width:35%;
+}
+.flex-container2>div:nth-of-type(1)>div>img{
+	width:100%;
+}
+.phonePoster{
+	height: 100%;
+	width: 200%;
+}
+
+.reflection-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.reflection-container>div:nth-of-type(1){
+	width: 20%;
+	
+	text-align: left;
+}
+.reflection-container>div:nth-of-type(1)>h1{
+	margin-left: 0.5em;
+	text-align: left;
+}
+.reflection-container>div:nth-of-type(2){
+	width: 70%;
 }
 @media only screen and (max-width: 900px) {
  .process-image{
@@ -197,16 +245,21 @@ p{
 	text-align: left;
  }}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav li:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
-    color: white;file:///E:/%E5%AD%A6%E6%A0%A1/IAT339/P03-PortfolioProject/project2.html
+    color: white;
+  }
+  .logo{
+  	float: left;
+  	display: block;
+  	font-size: 20px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -227,8 +280,6 @@ p{
 @media only screen and (max-width: 840px){
 	.pic-container{
 		flex-direction: column;
-		
-
 	}
 
 	.pic-container>div{
@@ -250,6 +301,65 @@ p{
 	/*border: 3px dotted #f9813a;*/
 }
 .background>div:nth-of-type(2)>div{
+	width: 100%;
+	padding: 0.5em;
+}
+.flex-container2{
+	justify-content: center;
+}
+.flex-container2>div:nth-of-type(1){
+	width: 80%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	/*border: 1px solid black*/
+
+}
+.flex-container2>div:nth-of-type(1)>div{
+	width: 100%;
+	justify-content: center;
+	margin-top: 1em;
+}
+.steps>div:nth-of-type(1){
+	width: 40%;
+	height: 40%;
+	align-self: center;
+}
+.steps>div:nth-of-type(1)>h2{
+	margin-top:3em;
+}
+.flex-container{
+	flex-direction: column;
+}
+
+.flex-container>div:nth-of-type(1){
+	width: 100%;
+	align-self: center;
+}
+
+.colors{
+	width: 100%;
+}
+.colors>div>img{
+	width: 100%;
+}
+.flex-container>div:nth-of-type(1)>div:nth-of-type(2){
+	width: 100%;
+}
+
+.reflection-container{
+	flex-direction: column;
+	justify-content: center;
+}
+.reflection-container>div:nth-of-type(1){
+	width:100%;
+	
+	text-align: center;
+}
+.reflection-container>div:nth-of-type(1)>h1{
+	margin-left: 0;
+	text-align: center;
+}
+.reflection-container>div:nth-of-type(2){
 	width: 100%;
 	padding: 0.5em;
 }
