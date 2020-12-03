@@ -4,11 +4,13 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Style Guide Template</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -25,17 +27,20 @@
       </p>
 
     </nav>
- --> <div class="nav-container">
-            <nav>
+ -->     <div class="topnav" id="myTopnav">
+            <nav  class="navbar" id="myTopnav">
                 <ul class="main-nav" id="js-menu">
-
-                    <li><a href="#interactive_elements" class="active">Interactive Elements</a></li>
-                    <li><a href="#text_elements">Text Elements</a></li>
-                    <li><a href="#combined_elements">Combined Elements</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x"></i>
+                    </a>
+                    <li class="active"><a href="Template.html" class="link">Styleguide</a></li>
+                    <li><a href="../Home.html" class="link">Home</a></li>
+                    <li><a href="../project2.html" class="link">Graphic</a></li>
+                    <li><a href="../web.html" class="link">Web</a></li>
                 </ul>
             </nav>
+            <script src="nav.js"></script>
       </div>
-
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -246,19 +251,6 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 <div class="container">
-      <section>
-        <h2>Main Navigation</h2>
-          <div class="nav-container">
-            <nav>
-                <ul class="main-nav" id="js-menu">
-
-                    <li><a href="styleguide.html" class="active">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">StyleGuide</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
     <!-- colors -->
     <section>
     <h2>Color pallete</h2>
@@ -299,5 +291,11 @@
       <p>Click to view <a href="../project.html" class="in-text-link">initial web page.</a></p>
     </section>
   </div>
+
+  <footer class="footer">
+    <div><a href="#"><h3>GitHub</h3></a></div>
+    <div><a href="../Home.html"><h3>WebPage</h3></a></div>
+    <div><a href="#"><h3>Reference</h3></a></div>
+</footer>
   </body>
 </html>

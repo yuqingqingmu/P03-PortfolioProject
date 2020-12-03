@@ -7,6 +7,12 @@ body {
   font-size: 1rem;
   background-color:#f9813a;
 }
+.title{
+  color: white;
+  text-align: center;
+  font-size: 2.8em;
+  font-family: 'Playfair Display';
+}
 h1{
 	text-align: center;
 	color:#f9813a;
@@ -236,14 +242,31 @@ li.active .link:after {
 .reflection-container>div:nth-of-type(2){
 	width: 70%;
 }
-@media only screen and (max-width: 900px) {
+.footer{
+  background-color:#ffd5cd;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.footer>div{
+  width: 33%;
+  text-align: center;
+}
+
+.footer>div>a{
+ color: #f9813a;
+}
+.footer>div>a:hover{
+ color: white;
+}
+/*@media only screen and (max-width: 900px) {
  .process-image{
 	width:22em;
 	height: 14em;
 }
 p{
 	text-align: left;
- }}
+ }}*/
 
 @media screen and (max-width: 700px) {
   .topnav li:not(:first-child) {display: none;}
@@ -253,9 +276,9 @@ p{
     color: white;
   }
   .logo{
-  	float: left;
+  	float: right;
   	display: block;
-  	font-size: 20px;
+  	font-size: 15px;
   }
 }
 
@@ -266,6 +289,11 @@ p{
     right: 0;
     top: 0;
     color: white;
+  }
+  .logo{
+  	right:30px;
+  	top: 10;
+  	width: 30%;
   }
   .topnav.responsive li {
     float: none;
