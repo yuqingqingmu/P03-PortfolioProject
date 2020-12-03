@@ -27,7 +27,7 @@ body{
 	margin: 0;
 }
 .flex-intro>div:nth-child(2){
-	border: 2px solid red;
+	
 	text-align: right;
 	margin: 0,0;
 }
@@ -117,12 +117,18 @@ li.active .link:after {
 	background: #ffd5cd;
 }
 
+.flex-title{
+  display: flex;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  /*border: 1px solid black;*/
+}
 
 .right-content{
   text-align: left;
-  margin-left: 2em;
+  margin-left: 1em;
   width: 45%;
-  font-size: 4em;
+  font-size: 3.5em;
   color: white;
   text-align: justify;
   align-self: center;
@@ -144,11 +150,6 @@ li.active .link:after {
 }
 
 
-.flex-title{
-  display: flex;
-  /*flex-wrap: wrap;*/
-  /*border: 1px solid black;*/
-}
 
 
 .intro{
@@ -161,7 +162,6 @@ li.active .link:after {
 .intro>h1{
 	margin: 0;
 }
-
 /*buttons*/
 .btn {
     border: none;
@@ -196,22 +196,20 @@ li.active .link:after {
 }
 
 .scroll-button {
-  position: absolute;
   width: 40px;
   height: 40px;
   background-color: #ffd5cd;
   border-radius: 22.5px;
-  left: 50%;
-  bottom: 7%;
-  margin-left: -22.5px;
-  z-index: 45;
-  cursor: pointer;
-  text-align: center;
+  margin-top: 1em;
   font-size: 30px;
   line-height: 47px;
   color: #fff;
  }
-
+.banner-bridge-center{
+  width: 50%;
+  text-align: center;
+  margin:auto;
+}
 .scroll-button:hover {
   background-color: #1a1c20;
   transition: 0.5s;
@@ -228,15 +226,12 @@ li.active .link:after {
   clear: both;
 }
 
-.banner-bridge-center{
-  margin-top: 10em;
-}
 
 .section1{
   /*border: 1px solid black;*/
   /*background-color: white;*/
   width: 90vw;
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 0;
   margin:auto;
   margin-top: 1em;
@@ -306,12 +301,18 @@ li.active .link:after {
   width: 50%;
   margin-bottom: 2em;
 }
-.flex-skills>div>ul>h3{
+.flex-skills>div>h3{
   color: #f9813a;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+.flex-skills>div>ul{
+  list-style-type: none;
+  padding: 0;
 }
 .flex-skills>div>ul,li{
   text-align: center;
-
 }
 .myWork{
   text-align: center;
@@ -424,19 +425,24 @@ li.active .link:after {
 }
 
 @media only screen and (max-width: 840px) {
+    
   .left-content{
       text-align: center;
       width: 100%;
-      font-size: 12px;
+      font-size: 15px;
       line-height: 1;
+      margin: auto;
+      justify-content: center;
       /*border: 1px solid black;*/
   }
+
   .flex-title{
     flex-direction: column;
+    justify-content: center;
   }
   .right-content{
     display: flex;
-    width: 100%;
+    width: 80%;
     /*border: 1px solid black;*/
     font-size: 20px;
     line-height: 2;
@@ -448,14 +454,14 @@ li.active .link:after {
       width: 20%;
       /*border: 1px solid black;*/
   }
-    .right-content>div:nth-of-type(2){
-      width: 30%;
-      /*border: 1px solid black;*/
+  .right-content>div:nth-of-type(2){
+      width: 40%;
+      font-size: 1.6rem;
   }
-  .scroll-button{
-      top: 90%;
+/*  .scroll-button{
+      top: 80%;
   }
-
+*/
   .flex-about>div:nth-of-type(1){
     width: 90%;
   }
@@ -492,20 +498,20 @@ li.active .link:after {
 
   .right-content{
     display: flex;
-    width: 100%;
-    
+    width: 100%; 
     font-size: 20px;
     line-height: 2;
+    flex-direction: column;
+
     text-align: center;
     justify-content: center;
-    margin-left: 2em;
   }
   .right-content>div:nth-of-type(1){
       width: 20%;
+      align-self: center;
   }
     .right-content>div:nth-of-type(2){
       width:  100%;
-      
   }
 }
 
@@ -534,4 +540,14 @@ li.active .link:after {
   .link:after {
    width: 50%;
 }
+}
+
+@media screen and (max-width: 940px) {
+.right-content>div:nth-of-type(2)>h1{
+      font-size: 1em;
+  }
+.left-content{
+  width: 50%;
+}
+
 }

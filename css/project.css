@@ -235,9 +235,10 @@ li.active .link:after {
 	
 	text-align: left;
 }
-.reflection-container>div:nth-of-type(1)>h1{
+.reflection-container>div:nth-of-type(1)>h2{
 	margin-left: 0.5em;
 	text-align: left;
+	color: #f9813a;
 }
 .reflection-container>div:nth-of-type(2){
 	width: 70%;
@@ -295,7 +296,7 @@ p{
   	top: 10;
   	width: 30%;
   }
-  .topnav.responsive li {
+  .topnav.responsive li{
     float: none;
     display: block;
     text-align: left;
@@ -380,12 +381,14 @@ p{
 }
 .reflection-container>div:nth-of-type(1){
 	width:100%;
-	
+
 	text-align: center;
 }
-.reflection-container>div:nth-of-type(1)>h1{
+.reflection-container>div:nth-of-type(1)>h2{
 	margin-left: 0;
 	text-align: center;
+	margin: auto;
+	color: #f9813a;
 }
 .reflection-container>div:nth-of-type(2){
 	width: 100%;
